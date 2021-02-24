@@ -1,7 +1,13 @@
 import logo from './logo.jpg';
+import consola from 'consola';
 import './App.css';
 
 function App() {
+
+  const consolaPressBtn = () => {
+    consola.success('Hello! World?');
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +16,9 @@ function App() {
 
       <main className="App-main">
         <h1>Casiimir</h1>
+        <button onClick={ consolaPressBtn }>
+          Press Here!
+        </button>
       </main>
 
       <footer className="App-footer">

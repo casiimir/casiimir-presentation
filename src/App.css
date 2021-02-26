@@ -6,3 +6,11 @@
   color: #282c34;
   font-family: 'Lobster Two', cursive;
 }
+
+.productsWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin: 75px 0;
+}

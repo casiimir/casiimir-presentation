@@ -10,13 +10,6 @@ main {
   overflow: hidden;
 }
 
-main img {
-  max-width: 1024px;
-
-  border-radius: 3px;
-  box-shadow: 0 10px 15px 1px rgba(0, 0, 0, .4);
-}
-
 main h1 {
   margin: 30px 0;
 }
@@ -24,4 +17,37 @@ main h1 {
 main h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
+}
+
+.main--img {
+  max-width: 1024px;
+
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 1px rgba(0, 0, 0, .4);
+}
+
+.showProductsBtn {
+  margin: 20px 0;
+  padding: 5px 15px;
+
+  border: 0;
+  border-radius: 6px;
+
+  font-size: 1.5rem;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.showProductsBtn:hover {
+  background: lightcoral;
+  color: white;
+}
+
+.showProductsBtn:active {
+  background: lightcoral;
+  color: white;
+  
+  box-shadow: inset 0 0 6px 1px rgba(0, 0, 0, 0.75);
 }

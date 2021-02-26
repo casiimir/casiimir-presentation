@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types';
 import './Header.css';
 
 function Header({ logo, name }) {
@@ -7,6 +8,11 @@ function Header({ logo, name }) {
       <span>{ name }</span>
     </header>
   )
+}
+
+Header.propTypes = {
+  logo: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 }
 
 export default Header;

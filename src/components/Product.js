@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types';
 import './Product.css';
 
 function Product(props) {
@@ -30,6 +31,14 @@ function Product(props) {
       }
     </>
   )
+}
+
+Product.propTypes = {
+  title: PropTypes.object.isRequired,
+  price: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 }
 
 export default Product;

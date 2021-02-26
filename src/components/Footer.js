@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types';
 import './Footer.css';
 
 function Footer({ company }) {
@@ -7,6 +8,10 @@ function Footer({ company }) {
       <p>{ new Date().getFullYear() } © { company }</p>
     </footer>
   )
+}
+
+Footer.propTypes = {
+  company: PropTypes.string.isRequired,
 }
 
 export default Footer;

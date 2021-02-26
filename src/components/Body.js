@@ -1,6 +1,7 @@
 import { Component } from 'react';
-import './Body.css';
+import { PropTypes } from 'prop-types';
 import Product from './Product';
+import './Body.css';
 
 class Body extends Component {
   constructor(props) {
@@ -33,6 +34,13 @@ class Body extends Component {
       </main>
     )
   }
+}
+
+Body.propTypes = {
+  data: PropTypes.object.isRequired,
+  cover: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 }
 
 export default Body;
